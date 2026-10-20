@@ -124,6 +124,75 @@
     .footer-inner { min-height: 74px; display: flex; align-items: center; justify-content: space-between; gap: 20px; color: var(--muted); font-size: 12px; }
     .footer-inner a { color: var(--green-dark); font-weight: 700; }
     .hidden { display: none !important; }
+    @media (min-width: 1100px) {
+  .shell { width: min(1400px, calc(100% - 96px)); }
+  .topbar { height: 86px; }
+  .home { padding: 82px 0 96px; }
+  .home h1 { max-width: 980px; font-size: clamp(62px, 5.2vw, 80px); }
+  .lede { max-width: 690px; font-size: 18px; }
+  .choice-grid { gap: 24px; margin-top: 50px; }
+
+  .product-card {
+    display: grid;
+    grid-template-columns: minmax(0, .92fr) minmax(0, 1.08fr);
+    min-height: 350px;
+  }
+  .card-photo {
+    height: auto;
+    min-height: 350px;
+    overflow: hidden;
+    padding: 18px;
+  }
+  .card-photo img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+  }
+  .card-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 32px 34px;
+    position: relative;
+    z-index: 1;
+    background: var(--card);
+  }
+  .card-content h2 { font-size: clamp(24px, 2vw, 30px); }
+  .card-content p { font-size: 15px; }
+  .card-bottom { margin-top: 28px; }
+  .price { font-size: 26px; }
+  .arrow-link { width: 46px; height: 46px; }
+
+  .contact-panel { margin-top: 24px; padding: 28px 34px; }
+  .contact-copy h2 { font-size: 19px; }
+  .contact-copy p { font-size: 14px; }
+  .more-note { gap: 32px; margin-top: 58px; padding-top: 28px; }
+  .more-note p { max-width: 900px; font-size: 15px; }
+
+  .detail { padding: 40px 0 92px; }
+  .detail-grid {
+    grid-template-columns: minmax(0, 1.08fr) minmax(430px, .92fr);
+    gap: 64px;
+    margin-top: 34px;
+  }
+  .gallery-main { height: 640px; border-radius: 28px; }
+  .thumb { flex-basis: 88px; height: 88px; }
+  .product-info { max-width: 560px; padding-top: 18px; }
+  .product-info h1 { font-size: clamp(44px, 4vw, 58px); }
+  .product-subtitle { font-size: 17px; }
+  .detail-price { font-size: 40px; }
+  .spec-grid { gap: 12px; }
+  .spec { min-height: 74px; padding: 15px 16px; }
+  .spec-label { font-size: 12px; }
+  .spec-value { font-size: 15px; }
+  .feature-list { gap: 13px; margin-top: 27px; }
+  .feature-list li { font-size: 15px; }
+  .notice { margin-top: 26px; padding: 17px 18px; font-size: 14px; }
+  .visit-note { margin: 21px 0 16px; font-size: 14px; }
+  .detail-more { margin-top: 76px; padding: 30px 34px; }
+  .detail-more h2 { font-size: 20px; }
+  .detail-more p { font-size: 15px; }
+}
     @media (max-width: 760px) {
       .shell { width: min(100% - 32px, 560px); }
       .topbar { height: 66px; }
