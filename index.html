@@ -1,0 +1,345 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f7f6f2">
+  <meta name="description" content="Heladera GAFA y aire acondicionado portátil SANSEI en venta. Consultá por WhatsApp y coordiná para verlos.">
+  <title>Heladera y aire en venta | Trato directo</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      color-scheme: light;
+      --ink: #1e2825;
+      --muted: #65716b;
+      --paper: #f7f6f2;
+      --card: #fff;
+      --line: #e6e7df;
+      --green: #1e664f;
+      --green-dark: #154d3b;
+      --lime: #d8f0a9;
+      --sand: #efeadd;
+      --shadow: 0 18px 55px rgba(32, 43, 36, .09);
+      font-family: "DM Sans", sans-serif;
+      font-synthesis: none;
+      text-rendering: optimizeLegibility;
+    }
+    * { box-sizing: border-box; }
+    body { margin: 0; background: var(--paper); color: var(--ink); min-width: 320px; }
+    button, a { font: inherit; }
+    a { color: inherit; text-decoration: none; }
+    button { color: inherit; }
+    img { max-width: 100%; display: block; }
+    .shell { width: min(1120px, calc(100% - 44px)); margin-inline: auto; }
+    .topbar { height: 76px; display: flex; align-items: center; justify-content: space-between; border-bottom: 1px solid rgba(40,53,45,.09); }
+    .brand { display: inline-flex; align-items: center; gap: 11px; font: 800 14px/1 "Manrope",sans-serif; letter-spacing: .08em; text-transform: uppercase; }
+    .brand-mark { display: grid; place-items: center; width: 36px; height: 36px; border-radius: 12px; color: white; background: var(--green); font-size: 17px; letter-spacing: 0; }
+    .toplink { color: var(--green-dark); display: inline-flex; align-items: center; gap: 8px; font-size: 14px; font-weight: 700; }
+    .toplink svg, .button svg { width: 18px; height: 18px; flex: none; }
+    main { min-height: calc(100vh - 150px); }
+    .home { padding: 67px 0 76px; }
+    .eyebrow { display: inline-flex; align-items: center; gap: 8px; color: var(--green-dark); font-size: 12px; font-weight: 700; letter-spacing: .13em; text-transform: uppercase; }
+    .eyebrow::before { content: ""; width: 20px; height: 1px; background: currentColor; }
+    h1, h2, h3, p { margin-top: 0; }
+    h1, h2, h3 { font-family: "Manrope",sans-serif; }
+    .home h1 { max-width: 780px; margin: 17px 0 15px; font-size: clamp(38px, 6vw, 66px); letter-spacing: -.055em; line-height: 1.04; }
+    .lede { max-width: 600px; margin: 0; color: var(--muted); font-size: 17px; line-height: 1.65; }
+    .choice-grid { display: grid; grid-template-columns: repeat(2,minmax(0,1fr)); gap: 22px; margin-top: 43px; }
+    .product-card { position: relative; display: flex; flex-direction: column; min-width: 0; overflow: hidden; border: 1px solid var(--line); border-radius: 22px; background: var(--card); box-shadow: 0 8px 25px rgba(32,43,36,.035); transition: transform .2s ease, box-shadow .2s ease; }
+    .product-card:hover { transform: translateY(-4px); box-shadow: var(--shadow); }
+    .card-photo { height: 260px; display: grid; place-items: center; padding: 14px; background: linear-gradient(140deg,#eeeee7,#f6f5ef); }
+    .card-photo img { width: 100%; height: 100%; object-fit: contain; mix-blend-mode: multiply; }
+    .card-content { padding: 23px 24px 24px; }
+    .card-kicker { margin: 0 0 8px; color: var(--green); font-size: 11px; font-weight: 700; letter-spacing: .12em; text-transform: uppercase; }
+    .card-content h2 { margin: 0 0 10px; font-size: 23px; line-height: 1.2; letter-spacing: -.035em; }
+    .card-content p { margin: 0; color: var(--muted); font-size: 14px; line-height: 1.55; }
+    .card-bottom { display: flex; justify-content: space-between; align-items: center; gap: 12px; margin-top: 21px; }
+    .price { font: 800 22px/1 "Manrope",sans-serif; letter-spacing: -.04em; white-space: nowrap; }
+    .arrow-link { width: 40px; height: 40px; display: grid; place-items: center; border-radius: 50%; color: white; background: var(--green); transition: background .2s, transform .2s; }
+    .product-card:hover .arrow-link { background: var(--green-dark); transform: translateX(2px); }
+    .arrow-link svg { width: 18px; height: 18px; }
+    .contact-panel { display: flex; align-items: center; justify-content: space-between; gap: 24px; margin-top: 22px; padding: 24px 27px; border-radius: 19px; background: #e8eee5; }
+    .contact-copy { display: flex; gap: 15px; align-items: center; }
+    .contact-icon { display: grid; place-items: center; flex: none; width: 45px; height: 45px; border-radius: 15px; color: var(--green-dark); background: var(--lime); }
+    .contact-icon svg { width: 22px; height: 22px; }
+    .contact-copy h2 { margin: 0 0 4px; font-size: 17px; letter-spacing: -.02em; }
+    .contact-copy p { margin: 0; color: var(--muted); font-size: 13px; }
+    .button { min-height: 48px; display: inline-flex; align-items: center; justify-content: center; gap: 9px; padding: 0 18px; border: 0; border-radius: 12px; color: white; background: var(--green); font-size: 14px; font-weight: 700; cursor: pointer; transition: background .2s, transform .2s; }
+    .button:hover { background: var(--green-dark); transform: translateY(-1px); }
+    .button-light { color: var(--green-dark); background: white; border: 1px solid var(--line); }
+    .button-light:hover { color: white; }
+    .more-note { display: flex; justify-content: space-between; align-items: center; gap: 20px; margin-top: 49px; padding-top: 24px; border-top: 1px solid var(--line); }
+    .more-note p { margin: 0; color: var(--muted); font-size: 14px; line-height: 1.6; }
+    .more-note strong { color: var(--ink); }
+    .text-link { flex: none; display: inline-flex; align-items: center; gap: 7px; color: var(--green-dark); font-size: 14px; font-weight: 700; }
+    .text-link svg { width: 16px; height: 16px; }
+    .detail { padding: 32px 0 72px; }
+    .back-link { display: inline-flex; align-items: center; gap: 8px; color: var(--muted); font-size: 14px; font-weight: 600; }
+    .back-link:hover { color: var(--green-dark); }
+    .back-link svg { width: 17px; height: 17px; }
+    .detail-grid { display: grid; grid-template-columns: minmax(0,1.05fr) minmax(0,.95fr); gap: 48px; align-items: start; margin-top: 27px; }
+    .gallery { min-width: 0; }
+    .gallery-main { position: relative; overflow: hidden; display: grid; place-items: center; width: 100%; height: 540px; border-radius: 23px; background: #efeee8; cursor: zoom-in; }
+    .gallery-main img { width: 100%; height: 100%; object-fit: contain; padding: 18px; mix-blend-mode: multiply; }
+    .gallery-count { position: absolute; right: 15px; bottom: 15px; padding: 7px 11px; border-radius: 99px; color: white; background: rgba(30,40,37,.72); font-size: 12px; font-weight: 600; }
+    .gallery-arrow { position: absolute; top: 50%; width: 42px; height: 42px; display: grid; place-items: center; transform: translateY(-50%); border: 0; border-radius: 50%; color: var(--ink); background: rgba(255,255,255,.9); cursor: pointer; box-shadow: 0 3px 12px rgba(0,0,0,.12); }
+    .gallery-arrow:hover { background: white; }
+    .gallery-arrow svg { width: 18px; height: 18px; }
+    .gallery-prev { left: 14px; }
+    .gallery-next { right: 14px; }
+    .thumbs { display: flex; gap: 10px; overflow-x: auto; padding: 12px 1px 5px; scrollbar-width: thin; }
+    .thumb { flex: 0 0 76px; height: 76px; overflow: hidden; padding: 3px; border: 1px solid transparent; border-radius: 13px; background: #ebeae4; cursor: pointer; }
+    .thumb img { width: 100%; height: 100%; object-fit: contain; mix-blend-mode: multiply; }
+    .thumb[aria-pressed="true"] { border-color: var(--green); box-shadow: 0 0 0 2px rgba(30,102,79,.12); }
+    .product-info { padding-top: 11px; }
+    .product-info h1 { margin: 12px 0 12px; font-size: clamp(33px,4vw,48px); line-height: 1.06; letter-spacing: -.055em; }
+    .product-subtitle { margin: 0; color: var(--muted); font-size: 15px; line-height: 1.65; }
+    .price-line { display: flex; align-items: baseline; gap: 10px; margin: 23px 0; }
+    .detail-price { font: 800 35px/1 "Manrope",sans-serif; letter-spacing: -.05em; }
+    .price-label { color: var(--muted); font-size: 12px; }
+    .spec-grid { display: grid; grid-template-columns: repeat(2,minmax(0,1fr)); gap: 10px; padding-top: 19px; border-top: 1px solid var(--line); }
+    .spec { min-height: 67px; padding: 13px 14px; border: 1px solid #e8e8e0; border-radius: 13px; background: rgba(255,255,255,.62); }
+    .spec-label { display: block; margin-bottom: 5px; color: var(--muted); font-size: 11px; }
+    .spec-value { display: block; font-size: 14px; font-weight: 700; }
+    .feature-list { display: grid; gap: 11px; margin: 23px 0 0; padding: 0; list-style: none; }
+    .feature-list li { display: flex; align-items: flex-start; gap: 10px; color: #35413b; font-size: 14px; line-height: 1.5; }
+    .check { display: grid; place-items: center; flex: none; width: 19px; height: 19px; margin-top: 1px; border-radius: 50%; color: var(--green-dark); background: #dff0d3; }
+    .check svg { width: 12px; height: 12px; }
+    .notice { margin-top: 21px; padding: 15px 16px; border-left: 3px solid #d1a74e; border-radius: 0 11px 11px 0; color: #655535; background: #f2eddc; font-size: 13px; line-height: 1.55; }
+    .notice strong { color: #554522; }
+    .visit-note { margin: 18px 0 14px; color: var(--muted); font-size: 13px; line-height: 1.55; }
+    .product-cta { display: flex; gap: 10px; flex-wrap: wrap; }
+    .product-cta .button { flex: 1 1 190px; }
+    .detail-more { margin-top: 58px; padding: 24px 26px; border: 1px solid var(--line); border-radius: 18px; background: rgba(255,255,255,.65); }
+    .detail-more h2 { margin: 0 0 7px; font-size: 18px; }
+    .detail-more p { margin: 0; color: var(--muted); font-size: 14px; line-height: 1.6; }
+    .lightbox { position: fixed; z-index: 10; inset: 0; display: none; place-items: center; padding: 24px; background: rgba(18,24,21,.88); }
+    .lightbox.open { display: grid; }
+    .lightbox img { max-width: min(92vw,1000px); max-height: 88vh; object-fit: contain; }
+    .lightbox-close { position: absolute; top: 20px; right: 20px; width: 44px; height: 44px; display: grid; place-items: center; border: 0; border-radius: 50%; color: var(--ink); background: white; cursor: pointer; }
+    .lightbox-close svg { width: 21px; height: 21px; }
+    footer { border-top: 1px solid var(--line); }
+    .footer-inner { min-height: 74px; display: flex; align-items: center; justify-content: space-between; gap: 20px; color: var(--muted); font-size: 12px; }
+    .footer-inner a { color: var(--green-dark); font-weight: 700; }
+    .hidden { display: none !important; }
+    @media (max-width: 760px) {
+      .shell { width: min(100% - 32px, 560px); }
+      .topbar { height: 66px; }
+      .toplink { font-size: 12px; }
+      .home { padding: 50px 0 58px; }
+      .home h1 { font-size: clamp(39px,11vw,57px); }
+      .lede { font-size: 15px; }
+      .choice-grid { grid-template-columns: 1fr; gap: 15px; margin-top: 31px; }
+      .product-card { display: grid; grid-template-columns: 40% 1fr; min-height: 190px; }
+      .card-photo { height: 100%; min-height: 190px; padding: 8px; }
+      .card-content { padding: 17px 15px; }
+      .card-content h2 { font-size: 19px; }
+      .card-content p { font-size: 12px; }
+      .card-bottom { margin-top: 14px; }
+      .price { font-size: 19px; }
+      .arrow-link { width: 35px; height: 35px; }
+      .contact-panel { align-items: flex-start; flex-direction: column; padding: 20px; }
+      .contact-panel .button { width: 100%; }
+      .more-note { align-items: flex-start; flex-direction: column; margin-top: 37px; }
+      .detail { padding-top: 24px; }
+      .detail-grid { grid-template-columns: 1fr; gap: 20px; margin-top: 20px; }
+      .gallery-main { height: min(105vw, 470px); border-radius: 19px; }
+      .product-info { padding-top: 4px; }
+      .product-info h1 { font-size: 38px; }
+      .detail-more { margin-top: 35px; padding: 21px; }
+    }
+    @media (max-width: 390px) {
+      .brand { font-size: 12px; }
+      .brand-mark { width: 32px; height: 32px; }
+      .toplink span { display: none; }
+      .product-card { grid-template-columns: 37% 1fr; }
+      .card-content { padding-inline: 12px; }
+      .spec-grid { gap: 8px; }
+    }
+    @media (prefers-reduced-motion: reduce) { *,*::before,*::after { scroll-behavior: auto !important; transition: none !important; } }
+  </style>
+</head>
+<body>
+  <header class="shell topbar">
+    <a class="brand" href="#/" aria-label="Inicio">
+      <span class="brand-mark" aria-hidden="true">V</span>
+      <span>Venta directa</span>
+    </a>
+    <a class="toplink" href="https://wa.me/5493794273789?text=Hola%2C%20vi%20tu%20p%C3%A1gina%20de%20los%20art%C3%ADculos%20en%20venta.%20%C2%BFMe%20pas%C3%A1s%20m%C3%A1s%20informaci%C3%B3n%3F" target="_blank" rel="noopener noreferrer" aria-label="Consultar por WhatsApp">
+      <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M20.2 11.7a8.2 8.2 0 0 1-12.1 7.2L4 20l1.1-4A8.2 8.2 0 1 1 20.2 11.7Z" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/><path d="M8.7 8.2c.2-.4.4-.4.7-.4h.4c.2 0 .3.1.4.4l.6 1.5c.1.2.1.4-.1.6l-.5.6c-.2.2-.2.4 0 .6.6 1 1.3 1.7 2.3 2.3.2.1.4.1.6-.1l.7-.8c.2-.2.4-.2.6-.1l1.4.7c.3.1.4.3.4.5 0 .3-.1.9-.5 1.3-.4.4-1 .6-1.6.6-.5 0-1.2-.2-2-.5-1.4-.6-2.7-1.7-3.7-3.2-.8-1.1-1-1.9-1-2.5 0-.7.3-1.2.7-1.5Z" fill="currentColor"/></svg>
+      <span>Consultar</span>
+    </a>
+  </header>
+
+  <main id="app" class="shell" aria-live="polite"></main>
+
+  <footer>
+    <div class="shell footer-inner">
+      <span>Venta particular · Coordinamos para que puedas verlos</span>
+      <a href="https://wa.me/5493794273789" target="_blank" rel="noopener noreferrer">WhatsApp · +54 9 379 427-3789</a>
+    </div>
+  </footer>
+
+  <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Foto ampliada" aria-hidden="true">
+    <button class="lightbox-close" type="button" aria-label="Cerrar foto"><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="m6 6 12 12M18 6 6 18" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg></button>
+    <img src="" alt="">
+  </div>
+
+  <script>
+    const phone = "5493794273789";
+    const whatsapp = (message) => "https://wa.me/" + phone + "?text=" + encodeURIComponent(message);
+    const icon = {
+      arrow: '<svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M5 12h14m-6-6 6 6-6 6" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>',
+      back: '<svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M19 12H5m6 6-6-6 6-6" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>',
+      check: '<svg viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="m3 8 3.2 3.2L13 4.5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>',
+      wa: '<svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M20.2 11.7a8.2 8.2 0 0 1-12.1 7.2L4 20l1.1-4A8.2 8.2 0 1 1 20.2 11.7Z" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/><path d="M8.7 8.2c.2-.4.4-.4.7-.4h.4c.2 0 .3.1.4.4l.6 1.5c.1.2.1.4-.1.6l-.5.6c-.2.2-.2.4 0 .6.6 1 1.3 1.7 2.3 2.3.2.1.4.1.6-.1l.7-.8c.2-.2.4-.2.6-.1l1.4.7c.3.1.4.3.4.5 0 .3-.1.9-.5 1.3-.4.4-1 .6-1.6.6-.5 0-1.2-.2-2-.5-1.4-.6-2.7-1.7-3.7-3.2-.8-1.1-1-1.9-1-2.5 0-.7.3-1.2.7-1.5Z" fill="currentColor"/></svg>'
+    };
+    const products = {
+      heladera: {
+        category: "Heladera · GAFA",
+        title: "Heladera GAFA de 374 litros",
+        short: "Con freezer, amplia capacidad y funcionamiento perfecto.",
+        price: "$470.000",
+        model: "HGF387AFB",
+        age: "4 años de uso",
+        photos: [
+          ["assets/heladera/heladera-01.webp", "Heladera GAFA, vista frontal"],
+          ["assets/heladera/heladera-02.webp", "Heladera GAFA, vista lateral"],
+          ["assets/heladera/heladera-03.webp", "Interior del freezer"],
+          ["assets/heladera/heladera-04.webp", "Interior de la heladera"],
+          ["assets/heladera/heladera-05.webp", "Estantes interiores"],
+          ["assets/heladera/heladera-06.webp", "Compartimentos interiores"]
+        ],
+        specs: [["Capacidad total", "374 litros"], ["Refrigerador", "254 litros"], ["Freezer", "120 litros"], ["Eficiencia", "Clase A"], ["Alto", "180 cm"], ["Ancho × profundidad", "61,4 × 62,7 cm"]],
+        features: ["Enfría y congela sin problemas.", "Color blanco, con freezer superior.", "Medidas compactas para su capacidad."],
+        notice: "Tiene detalles estéticos propios del uso, como rayones y pequeños abollones. No afectan su funcionamiento.",
+        message: "Hola, me interesa la heladera GAFA de 374 litros. ¿Podemos coordinar para que vaya a verla?"
+      },
+      aire: {
+        category: "Aire acondicionado · SANSEI",
+        title: "Aire portátil frío/calor",
+        short: "SANSEI portátil de 3.000 frigorías aproximadas, frío y calor.",
+        price: "$450.000",
+        model: "SAP35HC7API",
+        age: "1 año de uso",
+        photos: [
+          ["assets/aire/aire-01.webp", "Aire acondicionado SANSEI, vista frontal"],
+          ["assets/aire/aire-02.webp", "Aire acondicionado SANSEI, vista trasera"],
+          ["assets/aire/aire-03.webp", "Etiqueta de especificaciones del equipo"]
+        ],
+        specs: [["Refrigeración", "3.500 W"], ["Capacidad", "≈ 3.010 frigorías"], ["Funciones", "Frío y calor"], ["Uso", "Portátil"], ["Control", "Remoto incluido"], ["Panel", "Digital"]],
+        features: ["Funciona correctamente y responde a todos los controles.", "Se puede trasladar entre ambientes.", "Incluye control remoto y panel digital."],
+        notice: "Algunos segmentos de los números de la pantalla no encienden, por eso la temperatura puede verse incompleta. No afecta el funcionamiento ni la regulación.",
+        message: "Hola, me interesa el aire acondicionado portátil SANSEI. ¿Podemos coordinar para que vaya a verlo?"
+      }
+    };
+
+    const app = document.getElementById("app");
+    let currentProduct = null;
+    let currentPhoto = 0;
+    const formatWhatsApp = (message) => whatsapp(message);
+
+    function renderHome() {
+      currentProduct = null;
+      app.innerHTML = `
+        <section class="home">
+          <span class="eyebrow">Venta particular · Trato directo</span>
+          <h1>Encontrá lo que necesitás. Coordinamos por WhatsApp.</h1>
+          <p class="lede">Elegí qué querés ver, revisá los detalles y escribime para coordinar una visita. Los dos equipos se pueden venir a ver.</p>
+          <div class="choice-grid">
+            <a class="product-card" href="#/heladera" aria-label="Ver detalles de la heladera GAFA">
+              <div class="card-photo"><img src="${products.heladera.photos[0][0]}" alt="Heladera GAFA blanca" loading="eager"></div>
+              <div class="card-content"><p class="card-kicker">Heladera · GAFA</p><h2>374 litros con freezer</h2><p>4 años de uso · Funciona perfectamente</p><div class="card-bottom"><span class="price">$470.000</span><span class="arrow-link" aria-hidden="true">${icon.arrow}</span></div></div>
+            </a>
+            <a class="product-card" href="#/aire" aria-label="Ver detalles del aire acondicionado SANSEI">
+              <div class="card-photo"><img src="${products.aire.photos[0][0]}" alt="Aire acondicionado portátil SANSEI" loading="eager"></div>
+              <div class="card-content"><p class="card-kicker">Aire portátil · SANSEI</p><h2>Frío/calor · 3.000 frigorías</h2><p>1 año de uso · Control remoto incluido</p><div class="card-bottom"><span class="price">$450.000</span><span class="arrow-link" aria-hidden="true">${icon.arrow}</span></div></div>
+            </a>
+          </div>
+          <section class="contact-panel" aria-label="Contacto directo">
+            <div class="contact-copy"><span class="contact-icon">${icon.wa}</span><div><h2>¿Querés consultar directamente?</h2><p>Escribime y te respondo por WhatsApp.</p></div></div>
+            <a class="button" href="${formatWhatsApp("Hola, vi tu página de los artículos en venta. ¿Me pasás más información?")}" target="_blank" rel="noopener noreferrer">Contactar por WhatsApp ${icon.arrow}</a>
+          </section>
+          <div class="more-note"><p><strong>También hay otros artículos a la venta:</strong> mesa, sillas plásticas, muebles y algunos artículos de cocina. Consultame por WhatsApp.</p><a class="text-link" href="${formatWhatsApp("Hola, quería consultar por los otros artículos en venta.")}" target="_blank" rel="noopener noreferrer">Preguntar por otros artículos ${icon.arrow}</a></div>
+        </section>`;
+    }
+
+    function renderProduct(key) {
+      const product = products[key];
+      if (!product) { renderHome(); return; }
+      currentProduct = key;
+      currentPhoto = 0;
+      const specs = product.specs.map(([label,value]) => `<div class="spec"><span class="spec-label">${label}</span><span class="spec-value">${value}</span></div>`).join("");
+      const features = product.features.map((item) => `<li><span class="check">${icon.check}</span><span>${item}</span></li>`).join("");
+      const thumbs = product.photos.map(([src,alt],index) => `<button class="thumb" type="button" data-photo="${index}" aria-label="Ver foto ${index+1}: ${alt}" aria-pressed="${index===0}"><img src="${src}" alt="" loading="lazy"></button>`).join("");
+      app.innerHTML = `
+        <section class="detail">
+          <a class="back-link" href="#/">${icon.back} Volver a los productos</a>
+          <div class="detail-grid">
+            <div class="gallery">
+              <div class="gallery-main" id="gallery-main" role="group" tabindex="0" aria-label="Foto principal del producto; presiona Enter para ampliar">
+                <img id="main-photo" src="${product.photos[0][0]}" alt="${product.photos[0][1]}">
+                <button class="gallery-arrow gallery-prev" type="button" aria-label="Foto anterior">${icon.back}</button>
+                <button class="gallery-arrow gallery-next" type="button" aria-label="Foto siguiente">${icon.arrow}</button>
+                <span class="gallery-count"><span id="photo-index">1</span> / ${product.photos.length}</span>
+              </div>
+              <div class="thumbs" aria-label="Elegir foto">${thumbs}</div>
+            </div>
+            <div class="product-info">
+              <span class="eyebrow">${product.category}</span>
+              <h1>${product.title}</h1>
+              <p class="product-subtitle">${product.short}</p>
+              <div class="price-line"><span class="detail-price">${product.price}</span><span class="price-label">ARS · precio de venta</span></div>
+              <div class="spec-grid">${specs}</div>
+              <ul class="feature-list">${features}</ul>
+              <div class="notice"><strong>Detalle para tener en cuenta:</strong> ${product.notice}</div>
+              <p class="visit-note">Podés venir a verlo. Escribime por WhatsApp y coordinamos un horario.</p>
+              <div class="product-cta"><a class="button" href="${formatWhatsApp(product.message)}" target="_blank" rel="noopener noreferrer">${icon.wa} Consultar por este producto</a><a class="button button-light" href="#/">Ver el otro producto</a></div>
+            </div>
+          </div>
+          <section class="detail-more"><h2>¿Tenés alguna pregunta?</h2><p>Escribime directamente por WhatsApp. También hay una mesa, sillas plásticas, muebles y otros artículos disponibles.</p></section>
+        </section>`;
+      bindGallery(product);
+    }
+
+    function setPhoto(index) {
+      if (!currentProduct) return;
+      const product = products[currentProduct];
+      currentPhoto = (index + product.photos.length) % product.photos.length;
+      const [src,alt] = product.photos[currentPhoto];
+      const main = document.getElementById("main-photo");
+      if (main) { main.src = src; main.alt = alt; }
+      const counter = document.getElementById("photo-index");
+      if (counter) counter.textContent = String(currentPhoto + 1);
+      document.querySelectorAll(".thumb").forEach((button,i) => button.setAttribute("aria-pressed", String(i === currentPhoto)));
+    }
+
+    function bindGallery(product) {
+      document.querySelectorAll(".thumb").forEach((button) => button.addEventListener("click", () => setPhoto(Number(button.dataset.photo))));
+      document.querySelector(".gallery-prev").addEventListener("click", (event) => { event.stopPropagation(); setPhoto(currentPhoto - 1); });
+      document.querySelector(".gallery-next").addEventListener("click", (event) => { event.stopPropagation(); setPhoto(currentPhoto + 1); });
+      const main = document.getElementById("gallery-main");
+      main.addEventListener("click", (event) => { if (event.target.closest("button")) return; openLightbox(product.photos[currentPhoto]); });
+      main.addEventListener("keydown", (event) => { if (event.key === "Enter" || event.key === " ") { event.preventDefault(); openLightbox(product.photos[currentPhoto]); } });
+    }
+
+    const lightbox = document.getElementById("lightbox");
+    const lightboxImage = lightbox.querySelector("img");
+    function openLightbox(photo) { lightboxImage.src = photo[0]; lightboxImage.alt = photo[1]; lightbox.classList.add("open"); lightbox.setAttribute("aria-hidden","false"); lightbox.querySelector("button").focus(); }
+    function closeLightbox() { lightbox.classList.remove("open"); lightbox.setAttribute("aria-hidden","true"); lightboxImage.src = ""; }
+    lightbox.querySelector("button").addEventListener("click", closeLightbox);
+    lightbox.addEventListener("click", (event) => { if (event.target === lightbox) closeLightbox(); });
+    document.addEventListener("keydown", (event) => { if (event.key === "Escape") closeLightbox(); });
+
+    function route() {
+      const key = location.hash.replace(/^#\/?/, "").split("/")[0];
+      if (products[key]) renderProduct(key); else renderHome();
+      window.scrollTo({ top: 0, behavior: "smooth" });
+    }
+    window.addEventListener("hashchange", route);
+    route();
+  </script>
+</body>
+</html>
